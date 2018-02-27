@@ -1,0 +1,5 @@
+16:27  up 36 days, 17:07, 3 users, load averages: 1.40 1.63 1.87
+USER     TTY      FROM              LOGIN@  IDLE WHAT
+DanielLoftus console  -                29Jul17 36days -
+_mbsetupuser console  -                29Jul17 36days -
+DanielLoftus s000     -                16:19       - w
