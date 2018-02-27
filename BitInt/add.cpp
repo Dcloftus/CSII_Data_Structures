@@ -5,6 +5,7 @@
 #include <fstream>
 #include <cstdlib>
 #include "bigint.hpp"
+#include "bigint.cpp"
 
 int main() {
     std::ifstream in("data1-1.txt");    // Define stream for input
@@ -13,12 +14,17 @@ int main() {
         exit(1);
     }
     
-    //Until end of file
-       //Read two bigints
-       //Print them out
-       //Add them together
-       //Print out results
- 
+    bigint lhs;
+    bigint rhs;
+
+    while (in >> lhs && in >> rhs){
+      std::cout << "Left- " << lhs << std::endl;
+      std::endl;
+      std::cout << "Right- " << rhs << std::endl;
+      bigint added = lhs + rhs;
+      std::cout << "Added- " << added << std::endl;
+    }
+
     in.close();
     return 0;
 }
